@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:backgroundTint="@color/secondaryColor">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/L_img_1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silahkan Login Terlebih Dahulu"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/L_img_1"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:id="@+id/teksR"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/teksR"
+        android:padding="30dp"
+        android:id="@+id/ly_1"
+        android:layout_marginTop="20dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="Nama Lengkap"
+            android:backgroundTint="@color/background"
+            android:background="@drawable/button_shape"
+            android:paddingLeft="10dp"
+            android:id="@+id/nama"
+            android:layout_marginBottom="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="NIP"
+            android:backgroundTint="@color/background"
+            android:background="@drawable/button_shape"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/nip"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="Password"
+            android:backgroundTint="@color/background"
+            android:background="@drawable/button_shape"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/password"
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ly_1"
+        android:layout_centerHorizontal="true"
+        android:text="LOGIN"
+        android:width="170dp"
+        android:textSize="14dp"
+        android:background="@drawable/button_shape"
+        android:id="@+id/button3"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/button3"
+        android:padding="10dp"
+        android:id="@+id/ly2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum punya akun?"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Register"
+            android:textColor="@color/secondaryColor"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif"
+            android:id="@+id/txt_register"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ly_1"
+        android:text="Forgot Password?"
+        android:textColor="@color/secondaryColor"/>
+</RelativeLayout>
